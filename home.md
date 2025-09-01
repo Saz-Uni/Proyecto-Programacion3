@@ -25,25 +25,26 @@
 </main>
 
 <a href="apts.html" position=center>
-    	<div class="contenedor">
-      	<img src="https://img.freepik.com/foto-gratis/texturas-exteriores-contrastantes_23-2149702208.jpg?semt=ais_hybrid&w=740">
-      		<div class="texto">Propiedades</div>
+    <div class="contenedor">
+      <img src="https://img.freepik.com/foto-gratis/texturas-exteriores-contrastantes_23-2149702208.jpg?semt=ais_hybrid&w=740">
+      	<div class="texto">Propiedades</div>
     	</div>
-  </a><br>
+</a><br>
 
-  <a href="#contacto" position=center>
-    	<div class="contenedor">
-      	<img src="https://img.freepik.com/fotos-premium/empresario-usando-tableta-digital-sosteniendo-lapiz-optico-presionando-pantalla-virtual-boton-barra-busqueda_35674-12769.jpg">
-      		<div class="texto">Contactanos</div>
-    	</div><br>
-  	</a>
+<a href="#contacto" position=center>
+    <div class="contenedor">
+      <img src="https://img.freepik.com/fotos-premium/empresario-usando-tableta-digital-sosteniendo-lapiz-optico-presionando-pantalla-virtual-boton-barra-busqueda_35674-12769.jpg">
+      <div class="texto">Contactanos</div>
+    </div><br>
+</a>
 
-  <a href="acaercade.html" position=center>
-    	<div class="contenedor">
-      	<img src="https://web.persianfreegate.com/wp-content/uploads/2021/11/contact_us_background2.jpg">
-      		<div class="texto">Acerca de nosotros</div>
-    	</div>
-  	</a>
+<a href="acaercade.html" position=center>
+    <div class="contenedor">
+      <img src="https://web.persianfreegate.com/wp-content/uploads/2021/11/contact_us_background2.jpg">
+      <div class="texto">Acerca de nosotros</div>
+    </div>
+</a>
+
 </body>
 
 <footer style="background-color:black">
