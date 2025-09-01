@@ -20,25 +20,25 @@
 		</ul>
 	</header>
 	
-	<main>
+<main>
 		<h1><center>Inmobiliaria</center></h1>
-	</main>
+</main>
 
-	<a href="apts.html" position=center>
+<a href="apts.html" position=center>
     	<div class="contenedor">
       	<img src="https://img.freepik.com/foto-gratis/texturas-exteriores-contrastantes_23-2149702208.jpg?semt=ais_hybrid&w=740">
       		<div class="texto">Propiedades</div>
     	</div>
-  	</a><br>
+  </a><br>
 
-  	<a href="#contacto" position=center>
+  <a href="#contacto" position=center>
     	<div class="contenedor">
       	<img src="https://img.freepik.com/fotos-premium/empresario-usando-tableta-digital-sosteniendo-lapiz-optico-presionando-pantalla-virtual-boton-barra-busqueda_35674-12769.jpg">
       		<div class="texto">Contactanos</div>
     	</div><br>
   	</a>
 
-  	<a href="acaercade.html" position=center>
+  <a href="acaercade.html" position=center>
     	<div class="contenedor">
       	<img src="https://web.persianfreegate.com/wp-content/uploads/2021/11/contact_us_background2.jpg">
       		<div class="texto">Acerca de nosotros</div>
@@ -51,7 +51,7 @@
 		<h3><center>Contacto</center></h3>
 			<div class="social-bar">
         		<a href="https://www.facebook.com/UniversidadECCI" target="_blank" rel="noopener noreferrer" title="Facebook">
-          			<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+          			<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"/>
         		</a>
           		<a href="https://wa.me/573162862300?text=Hola%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" title="WhatsApp">
            			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
