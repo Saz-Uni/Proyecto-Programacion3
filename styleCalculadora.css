@@ -35,7 +35,7 @@ body{
 }
 #operaciondigital{
     background-color: #B0C4DE;
-    color: white;
+    color: black;
     height: 40px;
     padding: 3px;
     text-align: left;
@@ -56,3 +56,4 @@ body{
     display: flex;
 
 }
+
