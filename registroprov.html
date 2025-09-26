@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+</head>
+<body>
+    <header>
+		<div class="logo">🏡</div>
+    		<nav>
+				<a href="home.html">Inicio</a></li>
+				<a href="apts.html">Productos</a></li>
+				<a href="CalculadoraWeb.html">Calculadora</a></li>
+				<a href="#contacto">Contacto</a></li>
+				<a href="acaercade.html">Acerca de</a></li>
+			</nav>
+		<div class="buttons">
+			<button class="login" id="loginBtn">Login</button>
+      		<button class="signup" id="signupBtn">Sign-up</button>
+      			<div class="dropdown" id="dropdownMenu">
+					<a href="registrocli.html">Clientes</a>
+					<a href="registroprov.html">Provedores</a>
+					<a href="registroprod.html">Productos</a>
+				</div>
+    	</div>
+	</header>
+	<script>
+		const loginBtn = document.getElementById('loginBtn');
+		const dropdown = document.getElementById('dropdownMenu');
+
+		loginBtn.addEventListener('click', () => {
+		dropdown.classList.toggle('show');
+		});
+
+        const signupBtn = document.getElementById('signupBtn');
+    	signupBtn.addEventListener('click', () => {
+      	window.location.href = "Signup.html";
+    	});
+        
+		window.addEventListener('click', (e) => {
+		if (!loginBtn.contains(e.target) && !dropdown.contains(e.target)) {
+			dropdown.classList.remove('show');
+		}
+		});
+	</script>
+
+ <section>
+        <form class="form">
+            <div class="container">
+                <h1>Registro de Provedores</h1>
+                <h2><p>Ingresar la informacion del Provedor segun las especificaciones</p><hr></h2>   
+                
+                <label for="nombre"><b>Nombres</b></label>
+                <input type="text" name="Nombres" placeholder="Ingrese Nombres" required> <br><br>
+                <label for="apellido"><b>Apellidos</b></label>
+                <input type="text" name="Apellidos" placeholder="Ingrese Apellidos" required> <br><br>
+                <label for="documento"><b>Documento</b></label>
+                <input type="text" name="Documento" list="items" placeholder="Seleccione tipo de ID" required> <br><br>
+                <datalist id="items">
+                    <option value="C.C.">C.C.</option>
+                    <option value="T.I.">T.I.</option>
+                    <option value="C.E.">C.E.</option>
+                    <option value="P.P">P.P.</option>
+                </datalist>
+                <label for="telefono"><b>Numero ID</b></label>
+                <input type="number" name="Ndocumento" placeholder="Digite numero de ID" required> <br><br>
+                <label for="emailempresarial"><b>Email</b></label>
+                <input type="text" name="email" placeholder="Ingrese email Empresarial" required> <br><br>
+                <label for="empresa"><b>Empresa</b></label>
+                <input type="text" name="empresa" placeholder="Ingrese Empresa" required> <br><br>
+                <label for="nitrut"><b>Numero Empresa</b></label>
+                <input type="text" name="direccion" placeholder="NIT / RUT" required> <br><br>
+                <label for="ciudad"><b>Ciudad</b></label>
+                <input type="text" name="ciudad" list="ciudades" placeholder="Ingrese ciudad" required>
+                <datalist id="ciudades">
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Cúcuta">Cúcuta</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Pereira">Pereira</option>
+                         <option value="Santa Marta">Santa Marta</option>
+                    <option value="Ibagué">Ibagué</option>
+                </datalist> <br><br>
+
+                <label for="usuario"><b>Usuario</b></label>
+                <input type="text" placeholder="Ingrese un usuario" name="usuario" required> <br><br>
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingrese una contraseña" name="psw" required> <br><br>
+                <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+                <input type="password" placeholder="Repita la contraseña" name="psw-repeat" required> <br><br>
+                <hr>
+
+                <p>Al crear una cuenta, acepta nuestros <a href="#" style="color:dodgerblue">Términos y
+                        Privacidad</a>.</p>
+
+                <button type="submit" class="registerbtn">Registrar Usuario</button>
+
+            </div>
+
+        </form>
+    </section>
+</body>

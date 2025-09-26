@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web de ventas inmobiliaria</title>
+	<link rel="icon"  href="img/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="css/apt_styles.css">
+	
+</head>
+
+<body>  
+	<header>
+		<div class="logo">🏡 Propiedades Disponibles</div>
+    		<nav>
+				<a href="home.html">Inicio</a></li>
+				<a href="apts.html">Productos</a></li>
+				<a href="CalculadoraWeb.html">Calculadora</a></li>
+				<a href="#contacto">Contacto</a></li>
+				<a href="acaercade.html">Acerca de</a></li>
+			</nav>
+		<div class="buttons">
+			<button class="login" id="loginBtn">Login</button>
+      		<button class="signup" id="signupBtn">Sign-up</button>
+      			<div class="dropdown" id="dropdownMenu">
+					<a href="registrocli.html">Clientes</a>
+					<a href="registroprov.html">Provedores</a>
+					<a href="registroprod.html">Productos</a>
+				</div>
+    	</div>
+	</header>
+	<script>
+		const loginBtn = document.getElementById('loginBtn');
+		const dropdown = document.getElementById('dropdownMenu');
+
+		loginBtn.addEventListener('click', () => {
+		dropdown.classList.toggle('show');
+		});
+
+		const signupBtn = document.getElementById('signupBtn');
+    	signupBtn.addEventListener('click', () => {
+      	window.location.href = "Signup.html";
+    	});
+		
+		window.addEventListener('click', (e) => {
+		if (!loginBtn.contains(e.target) && !dropdown.contains(e.target)) {
+			dropdown.classList.remove('show');
+		}
+		});
+	</script>
+
+	<section id="casas">
+      <h2>Casas</h2>
+      <h3>Ventas / Alquiler</h3>
+      <div class="lista-propiedades">
+        <div class="propiedad">
+          <img src="https://hansenimoveis.com/wp-content/uploads/2025/05/Mansao-de-alto-luxo-frente-mar-na-Praia-do-Forte-10.jpg" alt="Casa 1">
+          <div class="info">
+            <p><strong>Opción 1</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+        <div class="propiedad">
+          <img src="https://www.360agenciainmobiliaria.com/inmuebles/20210601000619_Sansimon2.jpg" alt="Casa 2">
+          <div class="info">
+            <p><strong>Opción 2</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+        <div class="propiedad">
+          <img src="https://www.360agenciainmobiliaria.com/inmuebles/20210318190318_sansebastian.jpg" alt="Casa 3">
+          <div class="info">
+            <p><strong>Opción 3</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+		<div class="propiedad">
+          <img src="https://www.360agenciainmobiliaria.com/inmuebles/20200611190646_96924e41-0e9c-4c63-9ac8-565b66ea301f.jpg" alt="Casa 3">
+          <div class="info">
+            <p><strong>Opción 4</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+		<div class="propiedad">
+          <img src="https://www.360agenciainmobiliaria.com/articulo/imagenes/bogota5.jpeg" alt="Casa 3">
+          <div class="info">
+            <p><strong>Opción 5</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section id="apartamentos" style="margin-top:50px;">
+      <h2>Apartamentos</h2>
+      <h3>Ventas / Alquiler</h3>
+      <div class="lista-propiedades">
+        <div class="propiedad">
+          <img src="https://pics.nuroa.com/apartamento_en_venta_en_bogota_v69509_1570130722687998974.jpg" alt="Apto 1">
+          <div class="info">
+            <p><strong>Opción 1</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+        <div class="propiedad">
+          <img src="https://pics.nuroa.com/venta_apartamento_en_villas_del_mediterraneo_toberin_bogota_5440000754044953329.jpg" alt="Apto 2">
+          <div class="info">
+            <p><strong>Opción 2</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+        <div class="propiedad">
+          <img src="https://multimedia.metrocuadrado.com/920-M5999006/920-M5999006_1_x.jpg" alt="Apto 3">
+          <div class="info">
+            <p><strong>Opción 3</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+		<div class="propiedad">
+          <img src="https://www.bogoapts.com/wp-content/uploads/2024/04/attik-1.png" alt="Apto 3">
+          <div class="info">
+            <p><strong>Opción 4</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+		<div class="propiedad">
+          <img src="https://latinexclusive.com/sites/default/files/styles/property_results_page/public/api_file_downloads/3411416_3.jpg?itok=r-Jjke9m" alt="Apto 3">
+          <div class="info">
+            <p><strong>Opción 5</strong></p>
+            <p>Precio: COP 1.850.000.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+</body>
+	
+<footer style="background-color: black;">
+	<section id="contacto">
+		<h3><center>Contacto</center></h3>
+			<div class="social-bar">
+        		<a href="https://www.facebook.com/UniversidadECCI" target="_blank" rel="noopener noreferrer" title="Facebook">
+          			<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+        		</a>
+          		<a href="https://wa.me/573162862300?text=Hola%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+           			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+          		</a>
+            	<a href="https://www.instagram.com/universidad.ecci/" target="_blank" rel="noopener noreferrer" title="Instagram">
+              		<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
+           		</a>
+  			</div> 
+</footer> 
+
+</html>

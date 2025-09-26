@@ -1,0 +1,181 @@
+header{
+    font-family: Arial,Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #2e2e2e
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #fff;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.login {
+    background: transparent;
+    border: 1px solid #2e5eff;
+    color: #2e5eff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.login:hover {
+    background: #2e5eff;
+    color: #fff;
+}
+.signup {
+    background: #2e5eff;
+    border: none;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.signup:hover {
+    background: #1c46d9;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: #1c1c1c;
+    border: 1px solid #2e2e2e;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 160px;
+    z-index: 10;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #888;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+.dropdown a:hover {
+    background: #2e5eff;
+    color: #fff;
+}
+.dropdown.show {
+    display: block;
+}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+	background-image: url("https://fireart.studio/wp-content/uploads/2021/02/frame-188-5.jpg");
+    background-color: #000;
+    font-family: Arial,Helvetica, sans-serif;
+    text-align: justify;
+    color: aliceblue;
+}
+
+
+main {
+    padding: 40px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+} 
+h3 {
+    text-align: center;
+    color: #2e5eff;
+}
+
+.lista-propiedades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.propiedad {
+    background: white;
+    color: black;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+.propiedad:hover {
+    transform: scale(1.03);
+}
+.propiedad img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.propiedad .info {
+    padding: 15px;
+}
+.propiedad .info p {
+    margin: 6px 0;
+}
+
+
+.imagenes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 35px;                   
+	align-items: flex-start;     
+}
+.formato_imagen {
+	height: 300px;               
+	width: auto;                 
+}
+.social-bar {
+    background-color: #000;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	background-color: #1c1c1c;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+.social-bar a {
+	display: inline-block;
+    width: 40px;
+	height: 40px;
+	text-decoration: none;
+}
+.social-bar img {
+    width: 100%;
+	height: auto;
+	vertical-align: middle;
+}

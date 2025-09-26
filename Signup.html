@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+</head>
+<body>
+    <header>
+		<div class="logo">🏡</div>
+    		<nav>
+				<a href="home.html">Inicio</a></li>
+				<a href="apts.html">Productos</a></li>
+				<a href="CalculadoraWeb.html">Calculadora</a></li>
+				<a href="#contacto">Contacto</a></li>
+				<a href="acaercade.html">Acerca de</a></li>
+			</nav>
+		<div class="buttons">
+			<button class="login" id="loginBtn">Login</button>
+      		<button class="signup" id="signupBtn">Sign-up</button>
+      			<div class="dropdown" id="dropdownMenu">
+					<a href="registrocli.html">Clientes</a>
+					<a href="registroprov.html">Provedores</a>
+					<a href="registroprod.html">Productos</a>
+				</div>
+    	</div>
+	</header>
+	<script>
+		const loginBtn = document.getElementById('loginBtn');
+		const dropdown = document.getElementById('dropdownMenu');
+
+		loginBtn.addEventListener('click', () => {
+		dropdown.classList.toggle('show');
+		});
+
+        const signupBtn = document.getElementById('signupBtn');
+    	signupBtn.addEventListener('click', () => {
+      	window.location.href = "Signup.html";
+    	});
+        
+		window.addEventListener('click', (e) => {
+		if (!loginBtn.contains(e.target) && !dropdown.contains(e.target)) {
+			dropdown.classList.remove('show');
+		}
+		});
+	</script>
+
+	<section>
+		<form class="form">
+			<div class="container">
+				<h1>Ingreso Usuario</h1>
+				<h2><p>Ingresar la informacion del Usuario</p><hr></h2>   
+				
+   				<label for="usuario"><b>Usuario</b></label><br><br>
+                <input type="text" placeholder="Ingrese un nombre de usuario" name="usuario" required> <br><br><br>
+
+                <label for="psw"><b>Contraseña</b></label><br><br>
+                <input type="password" placeholder="Ingrese una contraseña" name="psw" required> <br><br><br>
+                <hr><br>
+			
+				<button type="submit" class="registerbtn">Ingresar Usuario</button>
+			</div>
+		</form>
+	</section>  
+</body>
