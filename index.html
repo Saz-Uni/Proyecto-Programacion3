@@ -5,44 +5,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web de vestas inmobiliaria</title>
 	<link rel="icon"  href="https://i.pinimg.com/564x/fc/16/ef/fc16eff6cd8c7ff12538799b8bd8f82e.jpg">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>  
 	<header>
-		<ul>
-			<li><a href="home.html">Inicio</a></li>
-			<li><a href="apts.html">Productos</a></li>
-			<li><a href="CalculadoraWeb.html">Calculadora</a></li>
-			<li><a href="#contacto">Contacto</a></li>
-			<li><a href="acaercade.html">Acerca de</a></li>
-		</ul>
+		<div class="logo">🏡</div>
+    		<nav>
+				<a href="home.html">Inicio</a></li>
+				<a href="apts.html">Productos</a></li>
+				<a href="CalculadoraWeb.html">Calculadora</a></li>
+				<a href="#contacto">Contacto</a></li>
+				<a href="acaercade.html">Acerca de</a></li>
+			</nav>
+		<div class="buttons">
+			<button class="login" id="loginBtn">Login</button>
+      		<button class="signup" id="signupBtn">Sign-up</button>
+      			<div class="dropdown" id="dropdownMenu">
+					<a href="registrocli.html">Clientes</a>
+					<a href="registroprov.html">Provedores</a>
+					<a href="registroprod.html">Productos</a>
+				</div>
+
+    	</div>
 	</header>
+	<script>
+		const loginBtn = document.getElementById('loginBtn');
+		const dropdown = document.getElementById('dropdownMenu');
+
+		loginBtn.addEventListener('click', () => {
+		dropdown.classList.toggle('show');
+		});
+
+		const signupBtn = document.getElementById('signupBtn');
+    	signupBtn.addEventListener('click', () => {
+      	window.location.href = "Signup.html";
+    	});
+
+		window.addEventListener('click', (e) => {
+		if (!loginBtn.contains(e.target) && !dropdown.contains(e.target)) {
+			dropdown.classList.remove('show');
+		}
+		});
+	</script>
 	
 	<main>
-		<h1><center>Inmobiliaria</center></h1>
+		<h1>INMOBILIARIA</h1>
 	</main>
 
-	<a href="apts.html" position=center>
-    	<div class="contenedor">
-      	<img src="https://img.freepik.com/foto-gratis/texturas-exteriores-contrastantes_23-2149702208.jpg?semt=ais_hybrid&w=740">
-      		<div class="texto">Propiedades</div>
-    	</div>
-  	</a><br>
-
-  	<a href="#contacto" position=center>
-    	<div class="contenedor">
-      	<img src="https://img.freepik.com/fotos-premium/empresario-usando-tableta-digital-sosteniendo-lapiz-optico-presionando-pantalla-virtual-boton-barra-busqueda_35674-12769.jpg">
-      		<div class="texto">Contactanos</div>
-    	</div><br>
-  	</a>
-
-  	<a href="acaercade.html" position=center>
-    	<div class="contenedor">
-      	<img src="https://web.persianfreegate.com/wp-content/uploads/2021/11/contact_us_background2.jpg">
-      		<div class="texto">Acerca de nosotros</div>
-    	</div>
-  	</a>
+	 <section class="home">
+    <img src="https://img.freepik.com/foto-gratis/texturas-exteriores-contrastantes_23-2149702208.jpg?semt=ais_hybrid&w=740" alt="Imagen Inmobiliaria">
+    <div class="descripcion">
+      <h1>Bienvenidos a JP_SAZ</h1>
+      <p>
+        Nos especializamos en ayudarte a encontrar la casa y/o apartamento de tus sueños o la mejor inversión en propiedades.  
+        Ofrecemos asesoría profesional, transparencia y confianza en cada paso del proceso.  
+        Tu futuro comienza con un nuevo hogar, y estamos aquí para hacerlo posible.
+      </p>
+    </div>
+  </section>
+  	<br>
+  	<br>		
 </body>
 
 <footer style="background-color:black">
@@ -60,6 +83,4 @@
            		</a>
   			</div> 
 </footer> 
-
-
 </html>
