@@ -49,12 +49,11 @@
         <form class="form">
             <div class="container">
                 <h1>Registro de Provedores</h1>
-                <h2><p>Ingresar la informacion del Provedor segun las especificaciones</p><hr></h2>   
+                <h2><p>Ingresar la informacion del Provedor segun las especificaciones</p><hr></h2> 
+                <form action="REGISTRO_PROVEEDORS.php" method="post"></form>  
                 
-                <label for="nombre"><b>Nombres</b></label>
-                <input type="text" name="Nombres" placeholder="Ingrese Nombres" required> <br><br>
-                <label for="apellido"><b>Apellidos</b></label>
-                <input type="text" name="Apellidos" placeholder="Ingrese Apellidos" required> <br><br>
+                <label for="nombres"><b>Nombres y Apellidos</b></label>
+                <input type="text" name="Nombres-Y-Apellidos" placeholder="Ingrese Nombres" required> <br><br>
                 <label for="documento"><b>Documento</b></label>
                 <input type="text" name="Documento" list="items" placeholder="Seleccione tipo de ID" required> <br><br>
                 <datalist id="items">
@@ -103,5 +102,4 @@
 
         </form>
     </section>
-
 </body>
