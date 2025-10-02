@@ -1,9 +1,9 @@
 <?php
 
-$HOSTNAME = "sql107.infinityfree.com";
-$USERNAME = "if0_40027129";
-$PASSWORDBS = "inbCGhRN1SIt9a";
-$DBNAME = "if0_40027129_123";
+$HOSTNAME = "sql303.infinityfree.com";
+$USERNAME = "if0_39829196";
+$PASSWORDBS = "El962yXzAZLM";
+$DBNAME = "if0_39829196_Programm3";
 
 
 $CONEXION = mysqli_connect($HOSTNAME,$USERNAME,$PASSWORDBS,$DBNAME);
@@ -51,5 +51,6 @@ if (!$RESULTADO) {
 	echo "</script>";
 
 }
+
 
 ?>
