@@ -11,7 +11,7 @@ if (!$CONEXION) {
 
 	echo "<script type= 'text/javascript'>";
 	echo "alert('Error al conectar la BS...')";
-	echo "window.location.href='https://saz-uni.github.io/Proyecto-Programacion3/home.html'";
+	echo "window.location.href='https://saz-uni.github.io/Proyecto-Programacion3/CalculadoraWeb.html'";
 	echo "</script>";
 
 }else{
@@ -54,3 +54,4 @@ if (!$RESULTADO) {
 
 
 ?>
+
